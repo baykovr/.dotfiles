@@ -1,0 +1,11 @@
+###    lovelybacon.deviantart.com   ####
+
+background no
+out_to_x no
+out_to_console yes
+update_interval 1
+total_run_times 0
+use_spacer none
+
+TEXT
+N: ${if_up eth0}${downspeedf eth0} : ${upspeedf eth0}${endif} | W:${if_up wlan0}${wireless_link_qual_perc wlan0}% | B: ${battery_percent BAT0}% | ${time %a %b %d  %k:%M:%S}
