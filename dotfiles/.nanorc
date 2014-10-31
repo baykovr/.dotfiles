@@ -1,9 +1,11 @@
 set smooth
+set autoindent
+set backup
 set morespace
-set nowrap
+set nohelp
 set mouse
 
-## Nanorc files
+# Nanorc files
 include "/usr/share/nano/nanorc.nanorc"
  
 ## C/C++
@@ -47,7 +49,4 @@ include "/usr/share/nano/sh.nanorc"
  
 ## POV-Ray
 include "/usr/share/nano/pov.nanorc"
-
-
-
 
