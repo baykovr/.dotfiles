@@ -1,0 +1,8 @@
+BoldAsFont=no
+FontHeight=12
+Font=Terminus
+BackgroundColour=10,10,10
+Term=xterm-vt220
+Locale=C
+Charset=UTF-8
+FontIsBold=yes
