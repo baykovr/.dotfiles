@@ -1,4 +1,4 @@
 dotfiles
 ========
 
-config files for many things
+configuration files for many things.
