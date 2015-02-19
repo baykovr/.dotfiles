@@ -18,7 +18,7 @@ font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Shift+Return exec terminology
+bindsym $mod+Shift+Return exec urxvt
 
 # kill focused window
 bindsym $mod+Shift+Q kill
@@ -137,7 +137,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 
 # colors
-client.focused			#cc6666 #cc6666 #dedede
+client.focused			#333333 #333333 #dedede
 client.unfocused		#444444 #444444 #dedede
 client.focused_inactive		#333333 #333333 #dedede
 client.urgent			#383a3b #383a3b #ee0000
