@@ -12,7 +12,7 @@ fi
 
 # Customizations...
 
-prompt walters
+prompt walkters
 
 alias l="ls -CF"
 alias la="ls -A"
