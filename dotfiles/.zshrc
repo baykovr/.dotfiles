@@ -16,4 +16,4 @@ prompt walters
 
 alias l="ls -CF"
 alias la="ls -A"
-alias cht="~/Git/chtittle/chtittle.sh"
+alias cht="~/Git/chtitle/chtitle.sh"

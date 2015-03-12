@@ -1,28 +1,22 @@
 #!/bin/bash
-# Robert A. Baykov
-# Colors
+# insprezto : a prezto installation script
+# Robert Baykov <baykvor@gmail.com> 2.19.15
+# Acknowledgments
+#     Sorin Ionescu <sorin.ionescu@gmail.com>
+#     https://github.com/sorin-ionescu/prezto
 
 # To update prezto git pull && git submodule update --init --recursive
 
-DEPENDENCIES="git zsh"
 
-NORMAL=$(tput sgr0)
-GREEN=$(tput setaf 2; tput bold)
-YELLOW=$(tput setaf 3)
-RED=$(tput setaf 1)
-#------------------------------------------------------------------------------
-
-#------------------------------------------------------------------------------
 function deps()
 {
+		deps="git zsh"
         deps_ok=YES
         for dep in $DEPENDENCIES
         do
                 if ! which $dep &>/dev/null;  then
-                		echo -e $RED
-                        echo This script requires $dep to run but it is not 
+                        echo "This script requires $dep to run but it is not"
                         echo installed.
-                        echo -e $NORMAL
                         deps_ok=NO
                 fi
         done
@@ -32,7 +26,6 @@ function deps()
         else                return 0
         fi
 }
-# -----------------------------------------------------------------------------
 
 echo -e $YELLOW
 echo "installing prezto"
