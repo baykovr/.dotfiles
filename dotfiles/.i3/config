@@ -153,12 +153,17 @@ bar {
         position top
 	colors 
 	{
-                #                       border  backgr. text                                
+                #-----------------------border  backgr. text                                
                 background		#222222
                 statusline		#dedede
-                focused_workspace	#CD3420 #CD3420 #ffffff
+                
+                # i3bar current selected
+                focused_workspace	#CD3420 #222222 #ffffff
+
                 active_workspace	#1A1A1A #363636 #ffffff
                 inactive_workspace	#1A1A1A #1A1A1A #9A9A9A
+                
+                # used for notifications
                 urgent_workspace	#333333 #900000 #ffffff
 	}
 	
