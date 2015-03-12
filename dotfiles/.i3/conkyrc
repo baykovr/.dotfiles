@@ -8,4 +8,4 @@ total_run_times 0
 use_spacer none
 
 TEXT
-N: ${if_up eth0}${downspeedf eth0} : ${upspeedf eth0}${endif} | W:${if_up wlan0}${wireless_link_qual_perc wlan0}% | B: ${battery_percent BAT0}% | ${time %a %b %d  %k:%M:%S}
+N: ${if_up eth0}${downspeedf eth0} : ${upspeedf eth0}${endif} | W:${if_up wlp12s0}${wireless_link_qual_perc wlp12s0}% | B: ${battery_percent BAT0}% | ${time %a %b %d  %k:%M:%S}
