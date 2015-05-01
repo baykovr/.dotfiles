@@ -17,9 +17,10 @@ set colorcolumn=80
 
 
 set cursorcolumn cursorline
-highlight ColorColumn  term=bold ctermbg=black 
-highlight CursorColumn term=bold ctermbg=black 
-highlight CursorLine   term=bold ctermbg=black 
+highlight ColorColumn  term=bold ctermbg=darkgrey
+highlight CursorColumn term=bold ctermbg=darkgrey
+highlight CursorLine   term=bold ctermbg=darkgrey 
+
 " Display
 set list
 set listchars=tab:▸\ ,eol:¬
@@ -32,6 +33,8 @@ set mouse=a
 set incsearch
 set smartcase
 set hlsearch
+set shiftwidth=2
+set tabstop=2
 
 " Keybindings 
 map ^C esc
