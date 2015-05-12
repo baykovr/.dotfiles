@@ -17,9 +17,10 @@ set colorcolumn=80
 
 
 set cursorcolumn cursorline
-highlight ColorColumn  term=bold ctermbg=darkgrey
-highlight CursorColumn term=bold ctermbg=darkgrey
-highlight CursorLine   term=bold ctermbg=darkgrey 
+highlight ColorColumn  term=bold ctermbg=1
+highlight CursorColumn term=bold ctermbg=235
+highlight CursorLine   term=bold ctermbg=235
+
 
 " Display
 set list

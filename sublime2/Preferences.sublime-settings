@@ -1,6 +1,7 @@
 {
 	"color_scheme": "Packages/Theme - Brogrammer/brogrammer.tmTheme",
 	"font_size": 11,
+	"rulers": [100],
 	"ignored_packages":
 	[
 		"Vintage"
