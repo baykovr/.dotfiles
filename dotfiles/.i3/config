@@ -138,27 +138,28 @@ bindsym $mod+r mode "resize"
 # ------------------------------------------------------------------------------
 # Application Pannels
 # ------------------------------#border-#backgr-#text--
-client.focused                  #1abc9c #34495e #1abc9c
-client.focused_inactive         #101010 #191919 #ffffff
-client.unfocused                #969896 #191919 #969896
-client.urgent                   #d54e53 #cd989a #d54e53
-client.background               #1d1d1d
+client.focused                  #81a2be #4271ae #ffffff
+client.focused_inactive         #969896 #1d1f21 #ffffff
+client.unfocused                #969896 #1d1f21 #ffffff
+client.urgent                   #f5871f #c82829 #1d1f21
+client.background               #1d1f21
 
 # ------------------------------------------------------------------------------
 # Status Bar
-bar {
-	status_command conky -c $HOME/.i3/conkyrc
-	#status_command i3status
+bar 
+{
+#status_command i3status
+	status_command conky -c $HOME/.i3/conkyrc	
     position top
 	colors 
 	{
-          background #34495e
+          background #1d1f21
           statusline #f5f5f5
-          #------------------#border-#backgr-#text--
-          focused_workspace  #1abc9c #34495e #1abc9c
-          active_workspace   #34495e #34495e #E8E8E8
-          inactive_workspace #34495e #34495e #E8E8E8
-          urgent_workspace   #2c3e50 #2c3e50 #e74c3c
+#----------------------------#border-#backgr-#text--
+          focused_workspace  #81a2be #4271ae #ffffff
+          active_workspace   #969896 #34495e #ffffff
+          inactive_workspace #969896 #1d1f21 #ffffff
+          urgent_workspace   #f5871f #c82829 #1d1f21
 	}
 }
 
