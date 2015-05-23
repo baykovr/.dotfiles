@@ -138,11 +138,11 @@ bindsym $mod+r mode "resize"
 # ------------------------------------------------------------------------------
 # Application Pannels
 # ------------------------------#border-#backgr-#text--
-client.focused                  #81a2be #4271ae #ffffff
-client.focused_inactive         #969896 #1d1f21 #969896
-client.unfocused                #969896 #1d1f21 #969896
+client.focused                  #95AB63 #10222B	#F6FFE0 
+client.focused_inactive         #404040 #252525 #355C00
+client.unfocused                #404040 #252525 #315858
 client.urgent                   #f5871f #c82829 #1d1f21
-client.background               #1d1f21
+#client.background               #1d1f21
 
 # ------------------------------------------------------------------------------
 # Status Bar
@@ -153,13 +153,13 @@ bar
     position top
 	colors 
 	{
-          background #1d1f21
-          statusline #f5f5f5
-#----------------------------#border-#backgr-#text--
-          focused_workspace  #81a2be #4271ae #ffffff
-          active_workspace   #969896 #34495e #ffffff
-          inactive_workspace #969896 #1d1f21 #ffffff
-          urgent_workspace   #f5871f #c82829 #1d1f21
+        background #252525
+        statusline #999999
+#--------------------------#border-#backgr-#text--
+        focused_workspace  #292929 #292929 #cccccc
+        active_workspace   #252525 #252525 #696f89
+        inactive_workspace #252525 #252525 #6b6b6b 
+        urgent_workspace   #252525 #252525 #c7a551
 	}
 }
 
