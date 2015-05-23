@@ -138,7 +138,7 @@ bindsym $mod+r mode "resize"
 # ------------------------------------------------------------------------------
 # Application Pannels
 # ------------------------------#border-#backgr-#text--
-client.focused                  #95AB63 #10222B	#F6FFE0 
+client.focused                  #95AB63 #252525	#cccccc 
 client.focused_inactive         #404040 #252525 #355C00
 client.unfocused                #404040 #252525 #315858
 client.urgent                   #f5871f #c82829 #1d1f21
