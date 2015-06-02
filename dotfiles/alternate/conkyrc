@@ -1,0 +1,13 @@
+###    lovelybacon.deviantart.com   ####
+
+background no
+out_to_x no
+out_to_console yes
+update_interval 1
+total_run_times 0
+use_spacer none
+
+TEXT
+ mem: ${memfree} |\
+ net: ${if_up enp2s0}${downspeedf enp2s0} : ${upspeedf enp2s0}${endif} |\
+ : ${time %a %b %d  %k:%M:%S}
