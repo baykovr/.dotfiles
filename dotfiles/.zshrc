@@ -12,7 +12,7 @@ fi
 
 # Customizations...
 
-prompt sorin
+prompt cloud ">" red
 
 alias l="ls -CF"
 alias la="ls -A"
