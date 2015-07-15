@@ -1,11 +1,21 @@
-###    lovelybacon.deviantart.com   ####
-
-background no
-out_to_x no
-out_to_console yes
+background      no
+out_to_x        no
+out_to_console  yes
 update_interval 1
 total_run_times 0
-use_spacer none
+use_spacer      none
+update_interval 1
+pad_percents    3
 
 TEXT
-N: ${if_up eth0}${downspeedf eth0} : ${upspeedf eth0}${endif} | W:${if_up wlp12s0}${wireless_link_qual_perc wlp12s0}% | B: ${battery_percent BAT0}% | ${time %a %b %d  %k:%M:%S}
+# Date & Time
+${time %a %b %d %k:%M:%S} || \
+# Wireless Status
+#${if_up wlps029f7u1}${wireless_link_qual_perc wlp0s29f7u1}% |
+# Wired Network Status
+#N: ${if_up eth0}${downspeedf eth0} : ${upspeedf eth0}${endif} |
+# CPU
+CPU ${cpu cpu1}% ${exec sensors | grep -m 1 "Core 0"|awk '{print $3}'}\
+# Battery
+B ${battery_percent BAT0}% 
+

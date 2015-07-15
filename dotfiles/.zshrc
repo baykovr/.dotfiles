@@ -18,6 +18,7 @@ alias l="ls -CF"
 alias la="ls -A"
 alias cht="~/Git/chtitle/chtitle.sh"
 alias bish="~/Git/bish/bish"
+alias py="python"
 
 # skynet
 autoload predict-on
