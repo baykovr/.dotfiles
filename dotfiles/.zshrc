@@ -10,9 +10,12 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Customizations...
+# JAVA
+JAVA_VERSION=7
 
-prompt cloud ">" red
+# Customizations...
+#prompt cloud ">" red
+prompt nicoulaj
 
 alias l="ls -CF"
 alias la="ls -A"
@@ -22,3 +25,6 @@ alias py="python"
 
 # skynet
 autoload predict-on
+
+# Java
+export JAVA_HOME=/usr/lib/jvm/java-$JAVA_VERSION-openjdk
