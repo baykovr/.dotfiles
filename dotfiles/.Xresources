@@ -1,5 +1,6 @@
 ! URxvt
-
+Xterm*termName: xterm-256color
+URxvt*termName: rxvt-unicode
 ! General settings
 URxvt.saveLines: 2000
 URxvt.scrollBar: False
@@ -10,7 +11,7 @@ URxvt.cursorBlink: False
 
 ! Extensions
 URxvt.perl-ext-common: default,clipboard,keyboard-select,url-select
-URxvt.urlLauncher: xdg-open
+URxvt.urlLauncher: chromium
 URxvt.urlButton: 1
 URxvt.underlineURLs: True
 
@@ -31,12 +32,12 @@ URxvt.keysym.M-u: perl:url-select:select_next
 ! Fonts
 
 !Courier
-URxvt.font: xft:Courier-10
+!URxvt.font: xft:Courier-10
 
 !Inconsolata
-!URxvt.font: xft:Inconsolata-8
-!URxvt.boldFont: xft:Inconsolata-8
-!URxvt.letterSpace: -1
+URxvt.font: xft:Inconsolata-8
+URxvt.boldFont: xft:Inconsolata-8
+URxvt.letterSpace: -1
 
 !Inconsolata-g
 !URxvt.font: xft:InconsolataG-10
@@ -65,26 +66,57 @@ URxvt.font: xft:Courier-10
 !Terminus
 !URxvt.font: xft:Terminus-10
 
-! Night
-*foreground:  #cccccc
-*background:  #2d2d2d
-*cursorColor: #cccccc
-*color0:      #2d2d2d
-*color8:      #2d2d2d
-*color1:      #f2777a
-*color9:      #f2777a
-*color2:      #99cc99
-*color10:     #99cc99
-*color3:      #ffcc66
-*color11:     #ffcc66
-*color4:      #99cccc
-*color12:     #99cccc
-*color5:      #cc99cc
-*color13:     #cc99cc
-*color6:      #009999
-*color14:     #009999
-*color7:      #cccccc
-*color15:     #cccccc
+! Colors (Tomorrow Git)
+!Tomorrow
+#define t_background        #ffffff
+#define t_current_line      #efefef
+#define t_selection      	#d6d6d6
+#define t_foreground      	#4d4d4c
+#define t_comment	     	#8e908c
+#define t_red		     	#c82829
+#define t_orange	     	#f5871f
+#define t_yellow        	#eab700
+#define t_green	        	#718c00
+#define t_aqua	        	#3e999f
+#define t_blue	        	#4271ae
+#define t_purple        	#8959a8
+
+
+*.foreground:   t_foreground
+*.background:   t_background
+*.cursorColor:  #aeafad
+
+! Black / Grey
+*.color0:       #000000
+*.color8:       #666666
+
+! Red / Bright Red
+*.color1:       t_red
+*.color9:       #FF3334
+
+! Green + Bright Green
+*.color2:       t_green
+*.color10:      #9ec400
+
+! Yellow (Orange) + Bright Yellow (Yellow)
+*.color3:       t_orange
+*.color11:      t_yellow
+
+! Blue + Bright Blue
+*.color4:       t_blue
+*.color12:      t_blue
+
+! Magenta (Purple) + Bright Magenta
+*.color5:       t_purple
+*.color13:      #b777e0
+
+! Cyan (Aqua) + Bright Cyan
+*.color6:       t_aqua
+*.color14:      #54ced6
+
+! Light Grey (Selection) + White (Current Line)
+*.color7:       t_selection
+*.color15:      t_current_line
 
 ! XTerm
 
