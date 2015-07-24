@@ -11,7 +11,7 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # JAVA
-JAVA_VERSION=7
+JAVA_VERSION=8
 
 # Customizations...
 #prompt cloud ">" red
