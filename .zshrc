@@ -19,8 +19,7 @@ prompt nicoulaj
 
 alias l="ls -CF"
 alias la="ls -A"
-alias cht="~/Git/chtitle/chtitle.sh"
-alias bish="~/Git/bish/bish"
+alias cht="~/Devel/Git/toolbox/scripts/chtitle.sh"
 alias py="python"
 
 # skynet
