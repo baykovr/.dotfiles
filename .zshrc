@@ -27,3 +27,5 @@ autoload predict-on
 
 # Java
 export JAVA_HOME=/usr/lib/jvm/java-$JAVA_VERSION-openjdk
+
+precmd () { print -Pn "\e]2;%n@%M | %~\a" } # title bar prompt
