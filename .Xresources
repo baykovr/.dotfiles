@@ -6,8 +6,8 @@ Xcursor.theme: Vanilla-DMZ-AA
 URxvt.saveLines    : 6000
 URxvt.scrollBar    : True
 URxvt.scrollstyle  : plain
-!URxvt*termName     : rxvt-unicode
-URxvt*termName     : xterm-256color
+URxvt*termName    : rxvt
+!URxvt*termName     : xterm
 URxvt.urgentOnBell : False
 URxvt.cursorBlink  : True
 
