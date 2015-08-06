@@ -1,4 +1,5 @@
-! URxvt
+! -----------------------------------------------------------------------------
+! URXVT
 Xcursor.theme: Vanilla-DMZ-AA
 
 ! -----------------------------------------------------------------------------
@@ -6,9 +7,9 @@ Xcursor.theme: Vanilla-DMZ-AA
 URxvt.saveLines    : 6000
 URxvt.scrollBar    : True
 URxvt.scrollstyle  : plain
-URxvt*termName    : rxvt
-!URxvt*termName     : xterm
-URxvt.urgentOnBell : False
+URxvt*termName     : rxvt
+!URxvt*termName    : xterm
+URxvt.urgentOnBell : True
 URxvt.cursorBlink  : True
 
 ! -----------------------------------------------------------------------------
@@ -72,49 +73,7 @@ URxvt.letterSpace: -1
 !URxvt.font: xft:Terminus-10
 
 ! -----------------------------------------------------------------------------
-! Colors (Tomorrow Git)
-#define t_background        #ffffff
-#define t_current_line      #efefef
-#define t_selection      	#d6d6d6
-#define t_foreground      	#4d4d4c
-#define t_comment	     	#8e908c
-#define t_red		     	#c82829
-#define t_orange	     	#f5871f
-#define t_yellow        	#eab700
-#define t_green	        	#718c00
-#define t_aqua	        	#3e999f
-#define t_blue	        	#4271ae
-#define t_purple        	#8959a8
-*.foreground:   t_foreground
-*.background:   t_background
-*.cursorColor:  #aeafad
-! Black / Grey
-*.color0:       #000000
-*.color8:       #666666
-! Red / Bright Red
-*.color1:       t_red
-*.color9:       #FF3334
-! Green + Bright Green
-*.color2:       t_green
-*.color10:      #9ec400
-! Yellow (Orange) + Bright Yellow (Yellow)
-*.color3:       t_orange
-*.color11:      t_yellow
-! Blue + Bright Blue
-*.color4:       t_blue
-*.color12:      t_blue
-! Magenta (Purple) + Bright Magenta
-*.color5:       t_purple
-*.color13:      #b777e0
-! Cyan (Aqua) + Bright Cyan
-*.color6:       t_aqua
-*.color14:      #54ced6
-! Light Grey (Selection) + White (Current Line)
-*.color7:       t_selection
-*.color15:      t_current_line
-
-! -----------------------------------------------------------------------------
-! XTerm 
+! XTerm
 
 Xterm*termName: xterm-256color
 XTerm*termName: xterm-256color
@@ -147,3 +106,57 @@ XTerm*translations: #override \
 
 ! Allow selecting email/url by double-click
 XTerm*charClass: 33:48,37-38:48,45-47:48,64:48,58:48,126:48,61:48,63:48,43:48,35:48
+
+
+
+! -----------------------------------------------------------------------------
+! Base16 Paraiso
+! Scheme: Jan T. Sott
+
+#define base00 #2f1e2e
+#define base01 #41323f
+#define base02 #4f424c
+#define base03 #776e71
+#define base04 #8d8687
+#define base05 #a39e9b
+#define base06 #b9b6b0
+#define base07 #e7e9db
+#define base08 #ef6155
+#define base09 #f99b15
+#define base0A #fec418
+#define base0B #48b685
+#define base0C #5bc4bf
+#define base0D #06b6ef
+#define base0E #815ba4
+#define base0F #e96ba8
+
+*.foreground:   base05
+*.background:   base00
+*.cursorColor:  base05
+
+*.color0:       base00
+*.color1:       base08
+*.color2:       base0B
+*.color3:       base0A
+*.color4:       base0D
+*.color5:       base0E
+*.color6:       base0C
+*.color7:       base05
+
+*.color8:       base03
+*.color9:       base08
+*.color10:      base0B
+*.color11:      base0A
+*.color12:      base0D
+*.color13:      base0E
+*.color14:      base0C
+*.color15:      base07
+
+! Note: colors beyond 15 might not be loaded (e.g., xterm, urxvt),
+! use 'shell' template to set these if necessary
+*.color16:      base09
+*.color17:      base0F
+*.color18:      base01
+*.color19:      base02
+*.color20:      base04
+*.color21:      base06
