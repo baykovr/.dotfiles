@@ -1,3 +1,4 @@
 xrdb .Xresources
-feh --bg-scale ~/Pictures/Walls/wall.jpg
+feh --bg-scale ~/.walls/wall.jpg
+xset -b #turn off the fucking bell.
 i3
