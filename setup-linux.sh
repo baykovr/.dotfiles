@@ -8,6 +8,7 @@ DIRS_TO_LINK=(
   .vimrc
   .xinitrc
   .Xresources
+  .Xresources.d
   .zpreztorc
   .zshrc
   .walls

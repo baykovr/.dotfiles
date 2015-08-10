@@ -1,15 +1,21 @@
-" Plugins
-execute pathogen#infect()
+" Vundle Plugin Settings
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'
+Plugin 'flazz/vim-colorschemes'
+
+call vundle#end()
 filetype plugin indent on
 
-" [p] Powerline
-set nocompatible
+
 set laststatus=2
 set encoding=utf-8
 
 " Theme
-" colorscheme twilight256
-
+" colorscheme Tomorrow
+"
 " Highlighting
 syntax on
 set number
