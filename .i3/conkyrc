@@ -4,18 +4,20 @@ out_to_console  yes
 update_interval 10
 total_run_times 0
 use_spacer      none
-update_interval 1
+update_interval 10
 pad_percents    3
 
 TEXT
 # Date & Time
-${time %a %b %d %k:%M:%S} || \
+${time %a %b %d %k:%M:%S} | \
 # Wireless Status
-#${if_up wlps029f7u1}${wireless_link_qual_perc wlp0s29f7u1}% |
+#${if_up wlps029f7u1}${wireless_link_qual_perc wlp0s29f7u1}% |\
 # Wired Network Status
-#N: ${if_up eth0}${downspeedf eth0} : ${upspeedf eth0}${endif} |
+#N: ${if_up eth0}${downspeedf eth0} : ${upspeedf eth0}${endif} |\
 # CPU
-CPU ${cpu cpu1}% ${exec sensors | grep -m 1 "Core 0"|awk '{print $3}'}\
+C ${cpu cpu1}% : \
+# Memory
+M ${mem mem} : \
 # Battery
 B ${battery_percent BAT0}% 
 

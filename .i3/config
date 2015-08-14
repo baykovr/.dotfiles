@@ -150,18 +150,19 @@ client.urgent                   #f5871f #181818 #1d1f21
 # Status Bar
 bar 
 {
-#status_command i3status
-	status_command conky -c $HOME/.i3/conkyrc	
-    position top
+        status_command i3status --config $HOME/.i3/i3statusrc
+	#status_command conky -c $HOME/.i3/conkyrc	
+	position top
+
 	colors 
 	{
-        background #252525
-        statusline #999999
-#--------------------------#border-#backgr-#text--
-        focused_workspace  #292929 #292929 #cccccc
-        active_workspace   #252525 #252525 #696f89
-        inactive_workspace #252525 #252525 #6b6b6b 
-        urgent_workspace   #252525 #252525 #c7a551
+                background #252525
+                statusline #999999
+                #------------------#border-#backgr-#text--
+                focused_workspace  #292929 #292929 #cccccc
+                active_workspace   #252525 #252525 #696f89
+                inactive_workspace #252525 #252525 #6b6b6b 
+                urgent_workspace   #252525 #252525 #c7a551
 	}
 }
 
