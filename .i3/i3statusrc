@@ -11,16 +11,16 @@ general {
         interval = 10
 }
 
-order += "cpu_usage 0"
-order += "run_watch DHCP"
-order += "run_watch VPN"
 order += "wireless wlp12s0"
+order += "cpu_usage 0"
 order += "ethernet eth0"
 
 order += "battery 0"
 order += "load"
 order += "tztime local"
 
+#order += "run_watch DHCP"
+#order += "run_watch VPN"
 #order += "disk /home"
 #order += "cpu_temperature 0"
 #order += "ipv6"
@@ -54,10 +54,9 @@ load {
         format = "L1: %1min"
 }
 
-disk "/home" {
-        format = "D:%free"
-}
-
+#disk "/home" {
+#        format = "D:%free"
+#}
 #run_watch DHCP {
 #        pidfile = "/var/run/dhclient*.pid"
 #}
