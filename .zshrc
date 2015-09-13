@@ -12,7 +12,7 @@ fi
 
 # zprezto
 #prompt cloud ">" red
-prompt nicoulaj
+prompt skwp
 
 # alias
 alias l="ls -CF"
