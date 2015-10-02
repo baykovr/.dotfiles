@@ -24,14 +24,15 @@ set colorcolumn=80
 
 set cursorcolumn cursorline
 highlight ColorColumn  term=bold ctermbg=1
+
 " 235 for vdark grey
 highlight CursorColumn term=bold ctermbg=150
 highlight CursorLine   term=bold ctermbg=150
 
 
 " Display
-set list
-set listchars=tab:▸\ ,eol:¬
+" set list
+" set listchars=tab:▸\ ,eol:¬
 set ttyfast
 
 " Mouse support

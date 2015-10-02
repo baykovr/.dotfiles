@@ -19,7 +19,7 @@ alias l="ls -CF"
 alias la="ls -A"
 alias cht="~/Devel/Git/toolbox/scripts/chtitle.sh"
 alias py="python"
-
+alias sshman="~/Devel/Git/ssh-manager/ssh-manager.sh"
 # Predictions
 autoload predict-on
 

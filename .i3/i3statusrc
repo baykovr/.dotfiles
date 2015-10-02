@@ -14,11 +14,11 @@ general {
 order += "ethernet enp2s0"
 order += "cpu_usage 0"
 order += "load"
+order += "disk /home"
 order += "tztime local"
 
 #order += "run_watch DHCP"
 #order += "run_watch VPN"
-order += "disk /home"
 #order += "cpu_temperature 0"
 #order += "ipv6"
 
