@@ -30,8 +30,8 @@ highlight CursorLine   term=bold ctermbg=150
 
 
 " Display
-set list
-set listchars=tab:▸\ ,eol:¬
+" set list
+" set listchars=tab:▸\ ,eol:¬
 set ttyfast
 
 " Mouse support
