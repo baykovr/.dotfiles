@@ -32,4 +32,3 @@ precmd () { print -Pn "\e]2;%n@%M | %~\a" } # title bar prompt
 
 # Vim keybinds
 # bindkey -v
-# export KEYTIMEOUT=1
