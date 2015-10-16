@@ -6,6 +6,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'scrooloose/nerdtree'
+Plugin 'davidhalter/jedi-vim'
 call vundle#end()
 filetype plugin indent on
 
@@ -47,3 +48,6 @@ set tabstop=2
 " Keybindings 
 map ^C esc
 
+" Omni completion
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
