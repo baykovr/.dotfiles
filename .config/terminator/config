@@ -11,6 +11,6 @@
 [plugins]
 [profiles]
   [[default]]
-    background_color = "#fdf6e3"
+    background_color = "#002b36"
     background_image = None
-    foreground_color = "#657b83"
+    foreground_color = "#839496"
