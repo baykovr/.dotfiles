@@ -15,10 +15,7 @@ fi
 prompt skwp
 
 # alias
-alias l="ls -CF"
-alias la="ls -A"
-alias cht="~/Devel/Git/toolbox/scripts/chtitle.sh"
-alias py="python"
+source .zsh-alias
 
 # Predictions
 autoload predict-on
