@@ -14,8 +14,12 @@ fi
 #prompt cloud ">" red
 prompt skwp
 
-# alias
-source .zsh-alias
+# Alias
+alias l="ls -CF"
+alias la="ls -A"
+alias cht="~/Devel/Git/toolbox/scripts/chtitle.sh"
+alias py="python"
+alias gstat="git status"
 
 # Predictions
 autoload predict-on
