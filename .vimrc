@@ -6,9 +6,11 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'scrooloose/nerdtree'
+Plugin 'taglist.vim'
+" Note : YouCompleteMe installed via aur.
+"
 call vundle#end()
 filetype plugin indent on
-
 
 set laststatus=2
 set encoding=utf-8

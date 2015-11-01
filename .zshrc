@@ -28,6 +28,8 @@ autoload predict-on
 JAVA_VERSION=8
 export JAVA_HOME=/usr/lib/jvm/java-$JAVA_VERSION-openjdk
 
+export PATH="$PATH:$JAVA_HOME/bin"
+
 # Title bar, terminal title to user@host | pwd 
 precmd () { print -Pn "\e]2;%n@%M | %~\a" } # title bar prompt
 
