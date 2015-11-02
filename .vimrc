@@ -6,7 +6,8 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'scrooloose/nerdtree'
-Plugin 'davidhalter/jedi-vim'
+Plugin 'taglist.vim'
+Plugin 'valloric/YouCompleteMe'
 call vundle#end()
 filetype plugin indent on
 
