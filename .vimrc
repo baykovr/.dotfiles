@@ -11,6 +11,8 @@ Plugin 'valloric/YouCompleteMe'
 call vundle#end()
 filetype plugin indent on
 
+" Plugin Specific
+let Tlist_Use_Right_Window = 1
 
 set laststatus=2
 set encoding=utf-8
@@ -52,3 +54,5 @@ map ^C esc
 " Omni completion
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
+
+
