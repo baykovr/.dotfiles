@@ -1,6 +1,3 @@
-[submodule "wd"]
-	path = wd
-	url = https://github.com/mfaerevaag/wd
 [submodule "script/wd"]
 	path = script/wd
 	url = https://github.com/mfaerevaag/wd
