@@ -1,0 +1,3 @@
+[submodule "script/wd"]
+	path = script/wd
+	url = https://github.com/mfaerevaag/wd
