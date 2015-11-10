@@ -1,3 +1,12 @@
 [submodule "script/wd"]
 	path = script/wd
 	url = https://github.com/mfaerevaag/wd
+[submodule ".vim/bundle/Vundle.vim"]
+	path = .vim/bundle/Vundle.vim
+	url = https://github.com/VundleVim/Vundle.vim
+[submodule ".vim/bundle/nerdtree"]
+	path = .vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree
+[submodule ".vim/bundle/vim-colorschemes"]
+	path = .vim/bundle/vim-colorschemes
+	url = https://github.com/flazz/vim-colorschemes
