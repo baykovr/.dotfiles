@@ -10,3 +10,6 @@
 [submodule ".vim/bundle/vim-colorschemes"]
 	path = .vim/bundle/vim-colorschemes
 	url = https://github.com/flazz/vim-colorschemes
+[submodule "util/wd"]
+	path = util/wd
+	url = https://github.com/mfaerevaag/wd
