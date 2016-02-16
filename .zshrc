@@ -38,10 +38,10 @@ fpath=(~/devel/git/dotfiles/util/wd $fpath)
 
 
 # SSHFS Shortcut
-tmuxssh()
+sshtmux()
 {
 	if [ $# -eq 0 ] ; then
-		echo "Hint: tmux-ssh user@host [tmux arg]"
+		echo "Hint: /sshtmux user@host [tmux arg]"
 	else
 		# ${@:2} adds all args except for the first one
 		ssh $1 -t tmux "${@:2}" 
@@ -51,7 +51,7 @@ fuse()
 {
 	# todo check if "fuse" binary is taken since this overwrites it.
 	if [ $# != 1 ] ; then
-		echo "Hint: _fuse_ user@host"
+		echo "Hint: /fuse user@host"
 	else
 		sshfs $1:/ ~/Mount -C -p 22 -o workaround=rename
 	fi
