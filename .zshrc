@@ -12,12 +12,12 @@ fi
 
 # zprezto
 #prompt cloud ">" red
-prompt nicoulaj
 
 # alias
 alias l="ls -CF"
 alias la="ls -A"
 alias py="python"
+source $HOME/.aliases
 
 # Predictions
 autoload predict-on
@@ -35,3 +35,28 @@ wd() {
 	. ~/devel/git/dotfiles/util/wd/wd.sh
 }
 fpath=(~/devel/git/dotfiles/util/wd $fpath)
+
+
+# SSHFS Shortcut
+tmuxssh()
+{
+	if [ $# -eq 0 ] ; then
+		echo "Hint: tmux-ssh user@host [tmux arg]"
+	else
+		# ${@:2} adds all args except for the first one
+		ssh $1 -t tmux "${@:2}" 
+	fi
+}
+fuse()
+{
+	# todo check if "fuse" binary is taken since this overwrites it.
+	if [ $# != 1 ] ; then
+		echo "Hint: _fuse_ user@host"
+	else
+		sshfs $1:/ ~/Mount -C -p 22 -o workaround=rename
+	fi
+}
+defuse()
+{
+	umount ~/Mount
+}
