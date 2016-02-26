@@ -17,7 +17,7 @@ prompt skwp
 # alias
 alias l="ls -CF"
 alias la="ls -A"
-alias cht="~/Devel/Git/toolbox/scripts/chtitle.sh"
+alias cht="~/Devel/Git/toolbox/scripts/chtitle/chtitle.sh"
 alias py="python"
 
 # Predictions
