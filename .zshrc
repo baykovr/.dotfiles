@@ -28,7 +28,8 @@ autoload predict-on
 precmd () { print -Pn "\e]2;%n@%M | %~\a" } # title bar prompt
 
 # Vim keybinds
-# bindkey -v
+bindkey -v
+bindkey '^R' history-incremental-search-backward
 # export KEYTIMEOUT=1
 
 wd() {
@@ -59,4 +60,9 @@ fuse()
 defuse()
 {
 	umount ~/Mount
+}
+
+rm-ds-store()
+{
+	find . -name "*DS_Store*" -depth -exec rm {} \;
 }
