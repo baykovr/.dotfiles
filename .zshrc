@@ -15,7 +15,7 @@ GIT=$DEVEL/Git
 DOTFILES=$GIT/dotfiles
 
 # zprezto
-prompt sorin
+prompt minimal
 
 # alias
 alias l="ls -CF"
