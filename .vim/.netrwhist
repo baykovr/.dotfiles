@@ -1,4 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =3
 let g:netrw_dirhist_1='/home/baykovr/.zprezto'
 let g:netrw_dirhist_2='/Users/robert.baykov/.zprezto'
+let g:netrw_dirhist_3='/Users/robert.baykov/devel/git/enterprise-services/.git'

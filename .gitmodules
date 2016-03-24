@@ -13,3 +13,6 @@
 [submodule "util/wd"]
 	path = util/wd
 	url = https://github.com/mfaerevaag/wd
+[submodule ".vim/bundle/YouCompleteMe"]
+	path = .vim/bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git
