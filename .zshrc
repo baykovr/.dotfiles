@@ -15,6 +15,10 @@ DEVEL=~/Devel
 GIT=$DEVEL/Git
 DOTFILES=$GIT/dotfiles
 
+# zprezto
+prompt minimal
+
+# alias
 alias l="ls -CF"
 alias la="ls -A"
 alias py="python"
