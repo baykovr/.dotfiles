@@ -16,7 +16,7 @@ set laststatus=2
 set encoding=utf-8
 
 " Theme
-colorscheme tomatosoup
+colorscheme ChocolateLiquor
 "
 " Highlighting
 syntax on
