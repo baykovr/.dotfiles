@@ -38,7 +38,7 @@ URxvt.pasteCommand: xclip -o -selection clipboard
 ! Fonts
 
 !Courier
-!URxvt.font: xft:Courier-10
+URxvt.font: xft:Courier-10
 
 !Inconsolata
 !URxvt.font: xft:Inconsolata-8
@@ -66,8 +66,8 @@ URxvt.pasteCommand: xclip -o -selection clipboard
 !URxvt.letterSpace: -1
 
 !Manospace
-URxvt.font: xft:Monospace-10
-URxvt.letterSpace: -1
+!URxvt.font: xft:Monospace-10
+!URxvt.letterSpace: -1
 
 !Terminus
 !URxvt.font: xft:Terminus-10

@@ -16,7 +16,7 @@ set laststatus=2
 set encoding=utf-8
 
 " Theme
-colorscheme Tomorrow
+colorscheme tomatosoup
 "
 " Highlighting
 syntax on
@@ -27,8 +27,8 @@ set colorcolumn=80
 set cursorcolumn cursorline
 highlight ColorColumn  term=bold ctermbg=1
 " 235 for vdark grey
-highlight CursorColumn term=bold ctermbg=150
-highlight CursorLine   term=bold ctermbg=150
+highlight CursorColumn term=bold ctermbg=235
+highlight CursorLine   term=bold ctermbg=235
 
 
 " Display
