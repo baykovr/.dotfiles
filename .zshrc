@@ -35,7 +35,8 @@ bindkey '^R' history-incremental-search-backward
 wd() {
 	. ~/devel/git/dotfiles/util/wd/wd.sh
 }
-fpath=(~/devel/git/dotfiles/util/wd $fpath)
+
+fpath=($HOME/devel/git/dotfiles/util/wd $fpath)
 
 
 # SSHFS Shortcut
@@ -66,3 +67,16 @@ rm-ds-store()
 {
 	find . -name "*DS_Store*" -depth -exec rm {} \;
 }
+
+# Fix for keybindings on tmux+zsh+osx.
+bindkey '\e[1~' beginning-of-line
+bindkey '\e[4~' end-of-line
+bindkey '\e[6~' down-line-or-search
+bindkey '\e[5~' up-line-or-search
+bindkey '\e[3~' delete-char
+bindkey -e
+bindkey '^[[1;9C' forward-word
+bindkey '^[[1;9D' backward-word
+
+export NVM_DIR="/Users/robert.baykov/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
