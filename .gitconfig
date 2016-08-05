@@ -1,0 +1,12 @@
+[user]
+	email = baykovr@gmail.com
+	name = Robert Baykov
+[push]
+	default = simple
+[alias]
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	s = status
+  graph = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold white)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+  g = !"git graph"
+  squash = "!sh -c \"git rebase -i HEAD~$1\" -"
+  deltag = "!sh -c \"git tag -d $2; git push $1 :refs/tags/$2\" -"
