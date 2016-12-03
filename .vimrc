@@ -7,6 +7,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-scripts/taglist.vim'
+Plugin 'Valloric/YouCompleteMe'
 call vundle#end()
 filetype plugin indent on
 
@@ -15,7 +16,7 @@ set laststatus=2
 set encoding=utf-8
 
 " Theme
-colorscheme simple256
+"colorscheme seti
 "
 " Highlighting
 syntax on
@@ -27,8 +28,10 @@ set cursorcolumn cursorline
 highlight ColorColumn  term=bold ctermbg=1
 " 235 very dark grey
 " 150 light green
-highlight CursorColumn term=bold ctermbg=235
-highlight CursorLine   term=bold ctermbg=235
+" 121 neon green
+" 90 ubuntu purplse
+highlight CursorColumn term=bold ctermbg=255
+highlight CursorLine   term=bold ctermbg=255
 
 
 " Display
