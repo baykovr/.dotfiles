@@ -24,14 +24,14 @@ set number
 set colorcolumn=80
 
 
-set cursorcolumn cursorline
+"set cursorcolumn cursorline
 highlight ColorColumn  term=bold ctermbg=1
 " 235 very dark grey
 " 150 light green
 " 121 neon green
 " 90 ubuntu purplse
-highlight CursorColumn term=bold ctermbg=255
-highlight CursorLine   term=bold ctermbg=255
+"highlight CursorColumn term=bold ctermbg=255
+"highlight CursorLine   term=bold ctermbg=255
 
 
 " Display
