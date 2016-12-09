@@ -16,7 +16,7 @@ set laststatus=2
 set encoding=utf-8
 
 " Theme
-colorscheme ChocolateLiquor
+" colorscheme ChocolateLiquor
 "
 " Highlighting
 syntax on
@@ -27,9 +27,8 @@ set colorcolumn=80
 set cursorcolumn cursorline
 highlight ColorColumn  term=bold ctermbg=1
 " 235 for vdark grey
-highlight CursorColumn term=bold ctermbg=0
-highlight CursorLine   term=bold ctermbg=0
-
+highlight CursorColumn term=bold ctermbg=255
+highlight CursorLine   term=bold ctermbg=255
 
 " Display
 "set list
