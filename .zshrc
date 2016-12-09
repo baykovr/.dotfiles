@@ -11,9 +11,11 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # zprezto
-#prompt cloud ">" red
+prompt cloud ">" red
+
 
 # alias
+alias vim="nvim -u ~/.nvimrc"
 alias l="ls -CF"
 alias la="ls -A"
 alias py="python"
@@ -68,13 +70,18 @@ rm-ds-store()
 	find . -name "*DS_Store*" -depth -exec rm {} \;
 }
 
+docker-env()
+{
+	eval "$(docker-machine env default)"
+}
+
 # Fix for keybindings on tmux+zsh+osx.
+bindkey -e
 bindkey '\e[1~' beginning-of-line
 bindkey '\e[4~' end-of-line
 bindkey '\e[6~' down-line-or-search
 bindkey '\e[5~' up-line-or-search
 bindkey '\e[3~' delete-char
-bindkey -e
 bindkey '^[[1;9C' forward-word
 bindkey '^[[1;9D' backward-word
 

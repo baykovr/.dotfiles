@@ -1,0 +1,2 @@
+3.0
+{'neobundle.vim': {'checked_time': 1470327426, 'installed_uri': 'https://github.com/Shougo/neobundle.vim.git', 'installed_path': '/Users/robert.baykov/.vim/bundle/neobundle.vim', 'revisions': {}, 'updated_time': '1466031260'}, 'deoplete.nvim': {'checked_time': 1470327453, 'installed_uri': 'https://github.com/Shougo/deoplete.nvim.git', 'installed_path': '/Users/robert.baykov/.vim/bundle/deoplete.nvim', 'revisions': {'1469490074': 'cd52ac6c076720541c6b9a82581622f597778e97'}, 'updated_time': '1469490074'}}
