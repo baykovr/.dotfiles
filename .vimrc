@@ -27,8 +27,8 @@ set colorcolumn=80
 set cursorcolumn cursorline
 highlight ColorColumn  term=bold ctermbg=1
 " 235 for vdark grey
-highlight CursorColumn term=bold ctermbg=121
-highlight CursorLine   term=bold ctermbg=121
+highlight CursorColumn term=bold ctermbg=255
+highlight CursorLine   term=bold ctermbg=255
 
 " Display
 "set list
