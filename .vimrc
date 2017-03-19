@@ -5,6 +5,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
 Plugin 'fatih/vim-go'
 Plugin 'taglist.vim'
@@ -36,8 +37,8 @@ set cursorcolumn cursorline
 highlight ColorColumn  term=bold ctermbg=1
 " 235 very dark grey
 " 150 light green
-highlight CursorColumn term=bold ctermbg=121
-highlight CursorLine   term=bold ctermbg=121
+highlight CursorColumn term=bold ctermbg=250
+highlight CursorLine   term=bold ctermbg=250
 
 
 " Display
@@ -57,4 +58,5 @@ set tabstop=2
 
 " Keybindings 
 map ^C esc
+
 

@@ -15,7 +15,7 @@ prompt cloud ">" red
 
 
 # alias
-alias vim="nvim -u ~/.nvimrc"
+alias vim="nvim -u NONE -u ~/.nvimrc"
 alias l="ls -CF"
 alias la="ls -A"
 alias py="python"
