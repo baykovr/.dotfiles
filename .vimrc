@@ -5,30 +5,30 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
+Plugin 'fatih/vim-go'
 Plugin 'taglist.vim'
-" Note : YouCompleteMe installed via aur.
-"
 call vundle#end()
-filetype plugin indent on
 
 set laststatus=2
 set encoding=utf-8
 
 " Theme
-colorscheme ChocolateLiquor
+" colorscheme google
 "
 " Highlighting
 syntax on
 set number
 set colorcolumn=80
 
-set cursorline
-" set cursorcolumn cursorline
+set cursorcolumn cursorline
 highlight ColorColumn  term=bold ctermbg=1
-" 235 for vdark grey
-" highlight CursorColumn term=bold ctermbg=254
-" highlight CursorLine   term=bold ctermbg=254
+" 235 very dark grey
+" 150 light green
+highlight CursorColumn term=bold ctermbg=254
+highlight CursorLine   term=bold ctermbg=254
+
 
 " Display
 "set list
@@ -47,4 +47,5 @@ set tabstop=2
 
 " Keybindings 
 map ^C esc
+
 
