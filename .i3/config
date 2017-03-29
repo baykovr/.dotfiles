@@ -12,23 +12,70 @@
 set $mod Mod1
 
 # font for window titles. ISO 10646 = Unicode
+font xft:Inconsolata 10
 
 #font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-font -*-cure-medium-*-*-*-11-*-*-*-*-*-*-*
+#font -*-cure-medium-*-*-*-11-*-*-*-*-*-*-*
+
+
+# ------------------------------------------------------------------------------
+# Colors             
+#
+
+
+set $back     #4F2512
+set $lback    #904420
+set $vlback   #eecc99
+set $dback    #554433 
+set $vdback   #331111
+set $white    #ffeedd
+set $rose     #660011
+
+set $top   #F5ECC3
+set $high  #E9CF92
+set $mid   #CA902C
+set $low   #904420
+set $base  #4F2512
+
+#                                #border #backgr #text
+client.focused                   $base  $base  $top
+client.focused_inactive          $dback $dback $top
+client.unfocused                 $dback $dback $top
+client.urgent                    $rose $rose   $top
+#client.background               #1d1f21
+
+# ------------------------------------------------------------------------------
+# Status Bar
+bar 
+{
+        status_command i3status --config $HOME/.i3/i3statusrc
+        #status_command conky -c $HOME/.i3/conkyrc      
+        position top
+
+        colors 
+        {
+                background $high
+                statusline $back
+                #                  #border #backgr #text 
+                focused_workspace  $mid   $high   $back
+                active_workspace   $mid   $high   $back
+                inactive_workspace $high  $high   $lback 
+                urgent_workspace   $high  $high   $rose
+        }
+}
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# Terminals
+# Applications
 bindsym $mod+Return       exec urxvt
-bindsym $mod+Shift+Return exec terminology
+bindsym $mod+Shift+Return exec terminator -e "tmux"
+bindsym $mod+p            exec dmenu_run -nb '#fdf6e3' -nf '#586c75' -sf '#fdf6e3' -sb '#b58900'
 
+# Key Bindings
 
 # kill focused window
 bindsym $mod+Shift+Q kill
-
-# start dmenu (a program launcher)
-bindsym $mod+p exec dmenu_run
 
 # change focus
 bindsym $mod+j focus left
@@ -79,6 +126,12 @@ bindsym $mod+a focus parent
 
 # focus the child container
 #bindcode $mod+d focus child
+
+# Make the currently focused window a scratchpad
+bindsym $mod+Shift+minus move scratchpad
+#
+# # Show the first scratchpad window
+bindsym $mod+minus scratchpad show
 
 # switch to workspace
 bindsym $mod+1 workspace 1
@@ -136,33 +189,3 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
-
-# ------------------------------------------------------------------------------
-# Application Pannels
-# ------------------------------#border-#backgr-#text--
-client.focused                  #BA8BAF #282828	#f8f8f8 
-client.focused_inactive         #282828 #181818 #585858
-client.unfocused                #282828 #181818 #585858
-client.urgent                   #f5871f #181818 #1d1f21
-#client.background               #1d1f21
-
-# ------------------------------------------------------------------------------
-# Status Bar
-bar 
-{
-        status_command i3status --config $HOME/.i3/i3statusrc
-	#status_command conky -c $HOME/.i3/conkyrc	
-	position top
-
-	colors 
-	{
-                background #252525
-                statusline #999999
-                #------------------#border-#backgr-#text--
-                focused_workspace  #292929 #292929 #cccccc
-                active_workspace   #252525 #252525 #696f89
-                inactive_workspace #252525 #252525 #6b6b6b 
-                urgent_workspace   #252525 #252525 #c7a551
-	}
-}
-
