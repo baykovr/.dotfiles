@@ -19,6 +19,7 @@ alias vim="nvim -u NONE -u ~/.nvimrc"
 alias l="ls -CF"
 alias la="ls -A"
 alias py="python"
+alias vi="vim"
 source $HOME/.aliases
 
 # Predictions
